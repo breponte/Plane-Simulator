@@ -5,6 +5,8 @@ public class PlaneController : MonoBehaviour
 {
     public InputActionAsset InputActions;
 
+    public Rigidbody rb;
+
     private InputAction m_rollAction;
     private InputAction m_pitchAction;
     private InputAction m_yawAction;
@@ -27,12 +29,11 @@ public class PlaneController : MonoBehaviour
 
     private float responseModifier
     {
-        get {  
+        get
+        {
             return (rb.mass / 10f) * responsiveness;
         }
     }
-
-    Rigidbody rb;
 
     private void Awake()
     {
