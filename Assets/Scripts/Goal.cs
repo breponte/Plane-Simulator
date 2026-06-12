@@ -1,6 +1,4 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class Goal : MonoBehaviour
-{
-    
-}
+public class Goal : MonoBehaviour {}
